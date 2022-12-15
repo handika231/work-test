@@ -3,9 +3,11 @@ import 'package:get/get.dart';
 import 'package:work_test/common/app_style.dart';
 import 'package:work_test/controller/bunga_calculate_controller.dart';
 import 'package:work_test/controller/bunga_dinamis_controller.dart';
+import 'package:work_test/controller/calculator_dinamis_controller.dart';
 import 'package:work_test/controller/rent_house_controller.dart';
 import 'package:work_test/views/bunga_calculate_view.dart';
 import 'package:work_test/views/bunga_dinamis_view.dart';
+import 'package:work_test/views/calculator_dinamis_view.dart';
 import 'package:work_test/views/calculator_view.dart';
 import 'package:work_test/views/form_view.dart';
 import 'package:work_test/views/input_view.dart';
@@ -64,6 +66,13 @@ class Application extends StatelessWidget {
           page: () => const BungaDinamisView(),
           binding: BindingsBuilder(() {
             Get.put(BungaDinamisController());
+          }),
+        ),
+        GetPage(
+          name: '/calculator-dinamis',
+          page: () => const CalculatorDinamisView(),
+          binding: BindingsBuilder(() {
+            Get.put(CalculatorDinamisController());
           }),
         ),
       ],

@@ -56,6 +56,15 @@ class InputView extends StatelessWidget {
               },
               text: 'Bunga Dinamis View',
             ),
+            const SizedBox(
+              height: 20,
+            ),
+            CustomButtonWidget(
+              onPressed: () {
+                Get.toNamed('/calculator-dinamis');
+              },
+              text: 'Calculator Dinamis View',
+            ),
           ],
         ),
       ),
